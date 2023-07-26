@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <title>Hairline21</title>
+        <link rel="icon" type="images/png" href="images/Hairline21.png" alt="#">
+       <link rel="stylesheet" type="text/css" href="css/restaurant.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"integrity="sha384-vp86vT'RFVJgpjF9jiIGPEEqYqlDwgyBgEf109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+       <meta charset = "utf-8">
+      <title> Digital Clock Using JavaScript </title>
+      <link rel = "stylesheet" href = "styles.css">
+    </head>
+    
+    <body>
+      <div id = "digital-clock"> </div>
+      <script src = "script.js"> </script>
+        <header>
+           <div class="iconBar">
+            <a href="https://www.youtube.com/channel/UCfB5lU4C6yTSjCbQHe9J8Iw"><i class="fab fa-youtube"></i></a>
+           </div>
+           
+           <div class="headerContact">
+             <i class="fas fa-phone-alt"></i>
+             <p>
+              Watch Watching Where
+             </p>
+           </div>
+        </header>
+        <nav>
+          <div class="navbar">
+            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="menu.html"><i class="fa fa-fw fa-search"></i> Search</a> 
+            <a href="locations.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+          </div>
+          <img src="images/channels4_profile.jpg" alt="#">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">OurMenu</a></li>
+              <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </nav>
+        
+        <div class="jumbotron">
+           <!-- Images size 3200 x 1400 -->
+           <img src="images/yellow.png" alt="#">
+           <div class="overlay">
+            
+           <h3 style="color:rgb(255, 115, 0);">Hairline21</h3>
+             <p>
+               Where everone who forged into the screen!0!
+             </p>
+             
+             <a href="menu.html">View our Menu >>> </a>
+             
+           </div>
+           
+        </div>
+        
+        <div class="container">
+            <!-- Write your assignment code here -->
+            <div class="row">
+                <div class="media">
+                  <img src="images/favicon-16x16.png" alt="#">
+                </div>
+                <div class="text">
+                <h3>Tres arte</h3>
+                <video width="230" height="320" autoplay muted loop>
+                  <source src="tres arte.mp4" type="video/mp4">
+                </video>
+                <p>
+                  <a href="https://www.youtube.com/shorts/sgb38xybds0"><i class="fab fa-youtube"></i></a>
+                
+                </p>
+                <a href="menu.html">Check out our Menu >></a>
+                </div>
+            </div><!-- End of row -->
+            
+            <div class="row">
+              
+                <div class="text">
+                
+              
+          <div class="flex-container">
+            <h3>infinite slide Abstract Art</h3>
+            <div>  <p>
+              <video width="230" height="320" autoplay muted loop>
+                <source src="infinite slide Abstract Art.mp4" type="video/mp4">
+              </video> </p></div>
+            <h3>red diamond art</h3>
+            <div><p> <video width="230" height="320" autoplay muted loop>
+              <source src="red diamond art (1).mp4" type="video/mp4">
+            </video></p></div>
+           
+              
+               
+                
+               
+              </div>
+            </div><!-- End of row -->
+      
+              
+               
+                
+                
+                
+              <script>
+                function Time() {
+
+// Creating object of the Date class
+var date = new Date();
+
+// Get current hour
+var hour = date.getHours();
+// Get current minute
+var minute = date.getMinutes();
+// Get current second
+var second = date.getSeconds();
+
+// Variable to store AM / PM
+var period = "";
+
+// Assigning AM / PM according to the current hour
+if (hour >= 12) {
+period = "PM";
+} else {
+period = "AM";
+}
+
+// Converting the hour in 12-hour format
+if (hour == 0) {
+hour = 12;
+} else {
+if (hour > 12) {
+hour = hour - 12;
+}
+}
+
+// Updating hour, minute, and second
+// if they are less than 10
+hour = update(hour);
+minute = update(minute);
+second = update(second);
+
+// Adding time elements to the div
+document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
+
+// Set Timer to 1 sec (1000 ms)
+setTimeout(Time, 1000);
+}
+
+// Function to update time elements if they are less than 10
+// Append 0 before time elements if they are less than 10
+function update(t) {
+if (t < 10) {
+return "0" + t;
+}
+else {
+return t;
+}
+}
+
+Time();
+
+              </script>
+                
+            </div><!-- End of row -->
+
+            
+            
+            
+            
+        </div><!-- Closing tag for container -->
+
+        <footer>
+            Placeholder
+        </footer>
+  <!--End of page code, but be sure to copy closing tags below-->
+    </body>
+</html>
